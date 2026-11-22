@@ -61,7 +61,7 @@ dependencies:
 esp_ldo_channel_handle_t ldo_mipi_phy = NULL;
 esp_ldo_channel_config_t ldo_mipi_phy_config = {
     .chan_id = 3,
-    .volt_mv = 2500,
+    .voltage_mv = 2500,
     .flags.mipi_phy = true,
 };
 ESP_ERROR_CHECK(esp_ldo_acquire_channel(&ldo_mipi_phy_config, &ldo_mipi_phy));
