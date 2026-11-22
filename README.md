@@ -36,7 +36,13 @@ SC7705 800×1280 竖屏 MIPI-DSI 面板的 [ESP-IDF](https://github.com/espressi
 
 ### 添加依赖
 
-发布到 [组件库](https://components.espressif.com) 后（namespace 以注册账号为准）：
+使用乐鑫官方组件库：
+
+```bash
+idf.py add-dependency "meibao-real/esp_lcd_sc7705^1.0.0"
+```
+
+或写入 `idf_component.yml`：
 
 ```yaml
 dependencies:
